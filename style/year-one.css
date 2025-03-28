@@ -218,11 +218,15 @@ ul li::before {
     background: #007BFF;
     color: white;
     border: none;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 22px; /* Increase icon size */
+    padding: 8px; /* Smaller button */
+    width: 40px; /* Small circular button */
+    height: 40px;
     cursor: pointer;
-    border-radius: 5px;
-    display: block;
+    border-radius: 50%; /* Circle button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background 0.3s ease-in-out;
 }
 
@@ -252,12 +256,12 @@ ul li::before {
         left: -100%;
     }
 
-    .sidebar.open {
-        left: 0;
+    .menu-btn {
+        top: 60px; /* Adjust for smaller screens */
     }
 
-    .menu-btn {
-        display: block;
+    .sidebar.open {
+        left: 0;
     }
 
     .content {

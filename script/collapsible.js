@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function toggleSidebar() {
         sidebar.classList.toggle("open");
+
+        // Hide menu button when sidebar is open
+        if (sidebar.classList.contains("open")) {
+            menuBtn.style.display = "none"; // Hide menu button
+        } else {
+            menuBtn.style.display = "block"; // Show menu button
+        }
     }
 
     menuBtn.addEventListener("click", toggleSidebar);

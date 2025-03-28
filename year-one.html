@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year One - Computer Science Fundamentals</title>
-    <link rel="stylesheet" href="style/sidebar.css">
     <link rel="stylesheet" href="style/year-one.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <i class="fa fa-laptop-code logo-icon"></i>
+            <span class="site-title">Knowledge-base</span>
+        </div>
+    </header>
+
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">
@@ -17,20 +25,20 @@
         </button>
         <h2>Navigation</h2>
         <ul>
-            <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="year-one.html"><i class="fa fa-book"></i> Year One</a></li>
+            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="year-one.html" class="active"><i class="fa fa-book"></i> Year One</a></li>
             <li><a href="year-two.html"><i class="fa fa-laptop-code"></i> Year Two</a></li>
             <li><a href="year-three.html"><i class="fa fa-shield-alt"></i> Year Three</a></li>
         </ul>
     </div>
 
-    <!-- Sidebar Toggle Button (Mobile) -->
-    <button class="menu-btn" onclick="toggleSidebar()">
-        <i class="fa fa-bars"></i> Menu
-    </button>
+    <button class="menu-btn">
+        <i class="fa fa-bars"></i>
+    </button>    
 
-    <div class="content">
-        <h1>Year One - Computer Science Fundamentals</h1>
+    <!-- Main Content -->
+    <main>
+        <h1>Year One - Computer Science Fundamentals 📖</h1>
 
         <button class="collapsible">1. Computer Systems & Architecture</button>
         <div class="content-section">
@@ -107,6 +115,12 @@
             </ul>
         </div>
     </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Knowledge Base | All Rights Reserved
+    </footer>
 
     <script src="script/collapsible.js"></script>
 </body>
