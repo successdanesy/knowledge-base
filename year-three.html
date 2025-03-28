@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year Three - Blockchain Technologies</title>
+    <link rel="stylesheet" href="style/year-one.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">
+            <i class="fa fa-times"></i>
+        </button>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="year-one.html"><i class="fa fa-book"></i> Year One</a></li>
+            <li><a href="year-two.html"><i class="fa fa-laptop-code"></i> Year Two</a></li>
+            <li><a href="year-three.html"><i class="fa fa-shield-alt"></i> Year Three</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Toggle Button (Mobile) -->
+    <button class="menu-btn" onclick="toggleSidebar()">
+        <i class="fa fa-bars"></i> Menu
+    </button>
+
+    <div class="content">
+        <h1>Year Three - Blockchain Technologies</h1>
+
+        <button class="collapsible">1. Fundamentals of Blockchain</button>
+        <div class="content-section">
+            <p>Blockchain is a decentralized, distributed ledger technology...</p>
+            <ul>
+                <li>Decentralization: No single authority.</li>
+                <li>Immutability: Data cannot be altered once recorded.</li>
+                <li>Transparency: Transactions are visible to all participants.</li>
+                <li>Security: Uses cryptographic algorithms.</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">2. How Blockchain Works</button>
+        <div class="content-section">
+            <p>Each block contains:</p>
+            <ul>
+                <li><strong>Block Header:</strong> Metadata like block number, timestamp.</li>
+                <li><strong>Transaction Data:</strong> A list of transactions.</li>
+                <li><strong>Nonce:</strong> Used in mining to generate valid hashes.</li>
+                <li><strong>Consensus Mechanisms:</strong> PoW, PoS, DPoS, PBFT.</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">3. Types of Blockchain</button>
+        <div class="content-section">
+            <ul>
+                <li>Public Blockchain (e.g., Bitcoin, Ethereum)</li>
+                <li>Private Blockchain (e.g., Hyperledger Fabric)</li>
+                <li>Consortium Blockchain (e.g., R3 Corda)</li>
+                <li>Hybrid Blockchain (e.g., IBM Food Trust)</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">4. Smart Contracts</button>
+        <div class="content-section">
+            <p>Self-executing contracts with predefined rules stored on a blockchain.</p>
+            <ul>
+                <li>Ethereum</li>
+                <li>Binance Smart Chain (BSC)</li>
+                <li>Solana</li>
+                <li>Hyperledger Fabric</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">5. Blockchain Security</button>
+        <div class="content-section">
+            <ul>
+                <li>Cryptographic Hashing (e.g., SHA-256)</li>
+                <li>Public and Private Keys</li>
+                <li>51% Attack</li>
+                <li>Double-Spending Problem</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">6. Real-World Applications</button>
+        <div class="content-section">
+            <ul>
+                <li>Cryptocurrencies (Bitcoin, Ethereum)</li>
+                <li>Supply Chain Management (IBM Food Trust, VeChain)</li>
+                <li>Healthcare (MedRec)</li>
+                <li>Finance & Banking (Ripple, DeFi)</li>
+                <li>Voting Systems</li>
+                <li>Non-Fungible Tokens (NFTs) - OpenSea, Rarible</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">7. Challenges & Future Trends</button>
+        <div class="content-section">
+            <ul>
+                <li>Scalability issues</li>
+                <li>Regulatory challenges</li>
+                <li>Energy consumption (PoW)</li>
+                <li>Future: Ethereum 2.0, CBDCs, Blockchain Interoperability</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="script/collapsible.js"></script>
+</body>
+</html>

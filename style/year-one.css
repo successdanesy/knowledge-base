@@ -1,0 +1,290 @@
+/* General Styles */
+
+/* Header with Icon */
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Logo Icon */
+.logo-icon {
+    font-size: 28px;
+    color: #007BFF;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+/* Site Title */
+.site-title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+/* Hover Effect */
+.header-container:hover .logo-icon {
+    transform: rotate(360deg);
+    color: #FFD700; /* Gold color */
+}
+
+.header-container:hover .site-title {
+    color: #FFD700;
+}
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    color: #222;
+}
+
+h2 {
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+ul li::before {
+    content: "✔️ ";
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Collapsible Sections */
+.collapsible {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapsible i {
+    transition: transform 0.3s;
+}
+
+.collapsible.active i {
+    transform: rotate(180deg);
+}
+
+.collapsible:hover {
+    background-color: #444;
+}
+
+/* Collapsible Content */
+.content-section {
+    display: none;
+    padding: 12px;
+    background-color: #fafafa;
+    border-left: 4px solid #007BFF;
+    margin-top: 8px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    height: 100%;
+    background: #222;
+    padding-top: 20px;
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #007BFF;
+}
+
+/* Sidebar Buttons */
+.menu-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+    background: #0056b3;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #007BFF;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -100%;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 12px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+    border-top: 3px solid #007BFF;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

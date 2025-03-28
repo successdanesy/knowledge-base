@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year One - Computer Science Fundamentals</title>
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/year-one.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">
+            <i class="fa fa-times"></i>
+        </button>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="year-one.html"><i class="fa fa-book"></i> Year One</a></li>
+            <li><a href="year-two.html"><i class="fa fa-laptop-code"></i> Year Two</a></li>
+            <li><a href="year-three.html"><i class="fa fa-shield-alt"></i> Year Three</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Toggle Button (Mobile) -->
+    <button class="menu-btn" onclick="toggleSidebar()">
+        <i class="fa fa-bars"></i> Menu
+    </button>
+
+    <div class="content">
+        <h1>Year One - Computer Science Fundamentals</h1>
+
+        <button class="collapsible">1. Computer Systems & Architecture</button>
+        <div class="content-section">
+            <h3>1.1 Central Processing Unit (CPU)</h3>
+            <ul>
+                <li>Executes instructions.</li>
+                <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs calculations.</li>
+                <li><strong>Control Unit (CU):</strong> Directs data flow.</li>
+                <li><strong>Registers:</strong> Fast storage for immediate data.</li>
+            </ul>
+
+            <h3>1.2 Memory & Storage</h3>
+            <ul>
+                <li>RAM: Temporary data storage.</li>
+                <li>Cache: Faster access to frequently used data.</li>
+                <li>ROM: Stores firmware (BIOS).</li>
+                <li>SSDs & HDDs: Permanent storage.</li>
+            </ul>
+
+            <h3>1.3 Instruction Set Architecture (ISA)</h3>
+            <ul>
+                <li>Defines how a CPU processes commands.</li>
+                <li>RISC: Simple, fast instructions (ARM).</li>
+                <li>CISC: Complex operations (Intel x86).</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">2. Databases</button>
+        <div class="content-section">
+            <h3>2.1 Types of Databases</h3>
+            <ul>
+                <li>Relational Databases (SQL): MySQL, PostgreSQL.</li>
+                <li>NoSQL Databases: MongoDB, Firebase.</li>
+                <li>Key-Value Stores: Redis.</li>
+            </ul>
+
+            <h3>2.2 Structured Query Language (SQL)</h3>
+            <ul>
+                <li><code>SELECT</code>: Retrieves data.</li>
+                <li><code>INSERT</code>: Adds records.</li>
+                <li><code>UPDATE</code>: Modifies records.</li>
+                <li><code>DELETE</code>: Removes records.</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">3. Introduction to Programming</button>
+        <div class="content-section">
+            <h3>3.1 Programming Paradigms</h3>
+            <ul>
+                <li>Imperative: Step-by-step (C, Python).</li>
+                <li>OOP: Objects & Classes (Java, Python).</li>
+                <li>Functional: Uses functions (Lisp, Haskell).</li>
+            </ul>
+
+            <h3>3.2 Control Structures</h3>
+            <ul>
+                <li>Conditional Statements: <code>if</code>, <code>else</code>.</li>
+                <li>Loops: <code>for</code>, <code>while</code>.</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">4. Mathematics for Computer Science</button>
+        <div class="content-section">
+            <h3>4.1 Discrete Mathematics</h3>
+            <ul>
+                <li>Boolean Algebra: Logic gates.</li>
+                <li>Sets & Relations: Database fundamentals.</li>
+            </ul>
+
+            <h3>4.2 Graph Theory</h3>
+            <ul>
+                <li>Nodes & Edges: Represent relationships.</li>
+                <li>Shortest Path Algorithms: GPS routing.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script/collapsible.js"></script>
+</body>
+</html>

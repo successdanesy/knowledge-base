@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base</title>
+    <link rel="stylesheet" href="style/year-one.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<header>
+    <div class="header-container">
+        <i class="fa fa-laptop-code logo-icon"></i>
+        <span class="site-title">CS Fundamentals</span>
+    </div>
+</header>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">
+            <i class="fa fa-times"></i>
+        </button>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="year-one.html"><i class="fa fa-book"></i> Year One</a></li>
+            <li><a href="year-two.html"><i class="fa fa-laptop-code"></i> Year Two</a></li>
+            <li><a href="year-three.html"><i class="fa fa-shield-alt"></i> Year Three</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Toggle Button (Mobile) -->
+    <button class="menu-btn" onclick="toggleSidebar()">
+        <i class="fa fa-bars"></i> Menu
+    </button>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Welcome to the Knowledge Base 📚</h1>
+        <p>Your ultimate resource for learning core **computer science** concepts.</p>
+
+        <!-- Sections -->
+        <section>
+            <h2>What’s Inside? 🔍</h2>
+            <p>This site provides structured learning materials for each **year of study**.</p>
+            <ul>
+                <li><strong>Year One:</strong> Foundations of Programming, Web Development.</li>
+                <li><strong>Year Two:</strong> Data Structures, Algorithms, AI Basics.</li>
+                <li><strong>Year Three:</strong> Advanced Computing, Cybersecurity.</li>
+            </ul>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section>
+            <h2>Start Learning 🚀</h2>
+            <a href="year-one.html" class="btn"><i class="fa fa-arrow-right"></i> Go to Year One</a>
+            <a href="year-two.html" class="btn"><i class="fa fa-arrow-right"></i> Go to Year Two</a>
+            <a href="year-three.html" class="btn"><i class="fa fa-arrow-right"></i> Go to Year Three</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Knowledge Base | All Rights Reserved
+    </footer>
+
+    <script src="script/collapsible.js"></script>
+</body>
+</html>
